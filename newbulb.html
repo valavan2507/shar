@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bulb{
+            height:500px;
+        }
+        body{
+            margin-left:600px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="bulbon()">on</button>
+    <img src="s0.jpg" alt="bulb" id="bulb">
+    <button onclick="bulboff()">off</button>
+    <script>
+        function bulbon(){
+            document.getElementById('bulb').src="s1.jpg"
+        }
+        function bulboff(){
+            document.getElementById('bulb').src="s0.jpg"
+        }
+    </script>
+</body>
+</html>
